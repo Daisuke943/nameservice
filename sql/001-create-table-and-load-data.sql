@@ -7,6 +7,8 @@ CREATE TABLE names (
 );
 INSERT INTO names (name) VALUES ('name1');
 INSERT INTO names (name) VALUES ('name2');
+INSERT INTO names (name) VALUES ('john');
+INSERT INTO names (name) VALUES ('mike');
 
 
 
