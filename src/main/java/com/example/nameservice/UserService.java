@@ -17,10 +17,11 @@ public class UserService {
   }
   public User findUser(int id){
     Optional<User> user = this.userMapper.findById(id);
-    if (user.isPresent()){
-      return user.get();
-    } else {
-      throw new UserNotFoundException("user not found");
-    }
+    return user.orElseThrow(() -> new UserNotFoundException("user not found"));
+//    if (user.isPresent()){
+//      return user.get();
+//    } else {
+//      throw new UserNotFoundException("user not found");
+//    }
   }
 }
