@@ -1,12 +1,14 @@
 package com.example.nameservice;
 
-public class Name {
+public class User {
   private int id;
   private String name;
+  private String email;
 
-  public Name(int id, String name){
+  public User(int id, String name, String email){
     this.id = id;
     this.name = name;
+    this.email = email;
   }
 
   public int getId(){
@@ -15,4 +17,5 @@ public class Name {
   public String getName(){
     return name;
   }
+  public String getEmail() { return email; }
 }
